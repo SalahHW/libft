@@ -6,23 +6,11 @@
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 03:27:29 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/05/25 04:38:37 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/05/25 05:11:01 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	if (!s)
-		return (0);
-	while (s[i])
-		i++;
-	return (i);
-}
 
 char	*join_strings(char **dst, char *src)
 {
