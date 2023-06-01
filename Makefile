@@ -6,7 +6,7 @@
 #    By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/02 18:12:50 by sbouheni          #+#    #+#              #
-#    Updated: 2023/05/25 05:15:38 by sbouheni         ###   ########.fr        #
+#    Updated: 2023/05/28 17:38:53 by sbouheni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ SRC =		ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c	\
 			ft_strtrim.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c			\
 			ft_split.c ft_itoa.c ft_striteri.c ft_putnbr_fd.c ft_strmapi.c		\
 			get_next_line.c get_next_line_utils.c								\
+			is_white_space.c ft_split_white_space.c
 
 
 BONUS_SRC =	ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c		\

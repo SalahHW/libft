@@ -6,7 +6,7 @@
 /*   By: sbouheni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:08:51 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/05/25 04:35:53 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/05/28 17:39:04 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,9 @@ void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
+//				personal
+int					is_white_space(char c);
+char				**ft_split_white_space(char const *s);
 //				get_next_line
 char				*get_next_line(int fd);
 char				*read_file(int fd, char **str);
