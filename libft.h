@@ -6,7 +6,7 @@
 /*   By: sbouheni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:08:51 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/05/28 17:39:04 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/06/04 04:49:22 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <errno.h>
+# include <stdarg.h>
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -63,9 +64,10 @@ char				*ft_itoa(int n);
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 void				ft_putnbr_fd(int n, int fd);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-t_list				*ft_lstnew(void *content);
 void				ft_lstadd_front(t_list **lst, t_list *new_list);
+//				bonus
 int					ft_lstsize(t_list *lst);
+t_list				*ft_lstnew(void *content);
 t_list				*ft_lstlast(t_list *lst);
 void				ft_lstadd_back(t_list **lst, t_list *new_list);
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
@@ -73,9 +75,6 @@ void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
-//				personal
-int					is_white_space(char c);
-char				**ft_split_white_space(char const *s);
 //				get_next_line
 char				*get_next_line(int fd);
 char				*read_file(int fd, char **str);
@@ -84,4 +83,20 @@ char				*find_cr(char **str);
 char				*join_strings(char **dst, char *src);
 char				*extract_line(char **str);
 char				*keep_remainder(char **str);
+//				ft_printf
+int					ft_print_char(int ap);
+int					ft_print_string(char *ap);
+int					ft_print_hexadecimal(unsigned long long ap);
+int					ft_print_integer(int ap);
+int					ft_print_unsigned_decimal(unsigned int ap);
+int					ft_print_lower_hexadecimal(unsigned long long ap);
+int					ft_print_upper_hexadecimal(unsigned long long ap);
+int					ft_print_percent(void);
+int					ft_printf(const char *format, ...);
+int					ft_get_number_length(int number);
+char				*ft_unsigned_itoa(unsigned int ap);
+//				personal
+int					is_white_space(char c);
+char				**ft_split_white_space(char const *s);
+
 #endif
