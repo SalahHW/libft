@@ -6,7 +6,7 @@
 #    By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/02 18:12:50 by sbouheni          #+#    #+#              #
-#    Updated: 2023/06/04 05:11:55 by sbouheni         ###   ########.fr        #
+#    Updated: 2023/06/29 00:24:49 by sbouheni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,16 +24,16 @@ SRC =		ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c	\
 			ft_split.c ft_itoa.c ft_striteri.c ft_putnbr_fd.c ft_strmapi.c		\
 			./get_next_line/get_next_line.c										\
 			./get_next_line/get_next_line_utils.c								\
-			./ft_printf/ft_printf.c												\
-			./ft_printf/ft_print_char.c											\
-			./ft_printf/ft_print_hexadecimal.c									\
-			./ft_printf/ft_print_integer.c										\
-			./ft_printf/ft_print_lower_hexadecimal.c							\
-			./ft_printf/ft_print_percent.c										\
-			./ft_printf/ft_print_string.c										\
-			./ft_printf/ft_print_unsigned_decimal.c								\
-			./ft_printf/ft_print_upper_hexadecimal.c							\
-			./ft_printf/ft_unsigned_itoa.c										\
+			./ft_printf/src/ft_printf.c											\
+			./ft_printf/src/ft_print_char.c										\
+			./ft_printf/src/ft_print_hexadecimal.c								\
+			./ft_printf/src/ft_print_integer.c									\
+			./ft_printf/src/ft_print_lower_hexadecimal.c						\
+			./ft_printf/src/ft_print_percent.c									\
+			./ft_printf/src/ft_print_string.c									\
+			./ft_printf/src/ft_print_unsigned_decimal.c							\
+			./ft_printf/src/ft_print_upper_hexadecimal.c						\
+			./ft_printf/src/ft_unsigned_itoa.c									\
 			is_white_space.c ft_split_white_space.c
 
 
