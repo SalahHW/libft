@@ -6,7 +6,7 @@
 /*   By: sbouheni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:08:51 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/07/19 22:35:23 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/07/19 23:35:40 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,5 +99,6 @@ char				*ft_unsigned_itoa(unsigned int ap);
 int					is_white_space(char c);
 char				**ft_split_white_space(char const *s);
 char				*p_free_strjoin(char *s1, char *s2);
+void				p_free_splited_str(char **splited_str);
 
 #endif
