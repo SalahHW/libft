@@ -6,7 +6,7 @@
 #    By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/02 18:12:50 by sbouheni          #+#    #+#              #
-#    Updated: 2023/06/29 00:24:49 by sbouheni         ###   ########.fr        #
+#    Updated: 2023/07/19 22:17:05 by sbouheni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,8 +34,9 @@ SRC =		ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c	\
 			./ft_printf/src/ft_print_unsigned_decimal.c							\
 			./ft_printf/src/ft_print_upper_hexadecimal.c						\
 			./ft_printf/src/ft_unsigned_itoa.c									\
-			is_white_space.c ft_split_white_space.c
-
+			./personal/p_is_white_space.c										\
+			./personal/p_split_white_space.c									\
+			./personal/p_free_strjoin.c											\
 
 BONUS_SRC =	ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c		\
 			ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c		\

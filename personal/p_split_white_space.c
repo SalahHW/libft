@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split_white_space.c                             :+:      :+:    :+:   */
+/*   p_split_white_space.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbouheni <salah.bouheniche@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 17:41:07 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/05/28 18:16:39 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/07/19 22:17:39 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 static long	word_counter(const char *str)
 {
