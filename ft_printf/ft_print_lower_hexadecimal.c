@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_upper_hexadecimal.c                       :+:      :+:    :+:   */
+/*   ft_print_lower_hexadecimal.c                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/18 03:02:15 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/09/20 04:14:30 by joakoeni         ###   ########.fr       */
+/*   Created: 2022/12/18 02:51:29 by sbouheni          #+#    #+#             */
+/*   Updated: 2023/09/20 04:23:32 by joakoeni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../libft.h"
 
 static int	get_size(unsigned long long ap)
 {
@@ -39,14 +39,14 @@ static char	*fill_hexadecimal_str(char *str, int i, unsigned long long ap)
 		if (digit < 10)
 			str[i] = '0' + digit;
 		else
-			str[i] = 'A' + digit - 10;
+			str[i] = 'a' + digit - 10;
 		ap /= 16;
 		i--;
 	}
 	return (str);
 }
 
-int	ft_print_upper_hexadecimal(unsigned long long ap)
+int	ft_print_lower_hexadecimal(unsigned long long ap)
 {
 	char	*hexadecimal_str;
 	int		i;

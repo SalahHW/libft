@@ -6,11 +6,11 @@
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/02 01:55:48 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/09/20 04:16:10 by joakoeni         ###   ########.fr       */
+/*   Updated: 2023/09/20 04:23:32 by joakoeni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../libft.h"
 
 static unsigned int	number_length(unsigned int number)
 {

@@ -6,11 +6,11 @@
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 02:56:40 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/09/20 04:16:10 by joakoeni         ###   ########.fr       */
+/*   Updated: 2023/09/20 04:23:32 by joakoeni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../libft.h"
 
 int	ft_print_percent(void)
 {

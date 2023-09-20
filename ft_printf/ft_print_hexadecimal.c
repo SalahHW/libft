@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_lower_hexadecimal.c                       :+:      :+:    :+:   */
+/*   ft_print_hexadecimal.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/18 02:51:29 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/09/20 04:16:10 by joakoeni         ###   ########.fr       */
+/*   Created: 2022/12/18 02:46:21 by sbouheni          #+#    #+#             */
+/*   Updated: 2023/09/20 04:23:32 by joakoeni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../libft.h"
 
 static int	get_size(unsigned long long ap)
 {
@@ -24,7 +24,7 @@ static int	get_size(unsigned long long ap)
 			ap /= 16;
 			count++;
 		}
-		return (count);
+		return (count + 2);
 	}
 	return (0);
 }
@@ -33,7 +33,7 @@ static char	*fill_hexadecimal_str(char *str, int i, unsigned long long ap)
 {
 	int	digit;
 
-	while (i >= 0)
+	while (i > 1)
 	{
 		digit = ap % 16;
 		if (digit < 10)
@@ -43,10 +43,12 @@ static char	*fill_hexadecimal_str(char *str, int i, unsigned long long ap)
 		ap /= 16;
 		i--;
 	}
+	str[1] = 'x';
+	str[0] = '0';
 	return (str);
 }
 
-int	ft_print_lower_hexadecimal(unsigned long long ap)
+int	ft_print_hexadecimal(unsigned long long ap)
 {
 	char	*hexadecimal_str;
 	int		i;
@@ -55,9 +57,9 @@ int	ft_print_lower_hexadecimal(unsigned long long ap)
 	i = get_size(ap);
 	if (i == 0)
 	{
-		if (ft_print_string("0") < 0)
+		if (ft_print_string("0x0") < 0)
 			return (-2147483648);
-		return (1);
+		return (3);
 	}
 	hexadecimal_str = malloc(sizeof(char) * (get_size(ap) + 1));
 	if (!hexadecimal_str)

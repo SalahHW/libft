@@ -1,41 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_string.c                                  :+:      :+:    :+:   */
+/*   ft_print_unsigned_decimal.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/18 02:58:35 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/09/20 04:16:10 by joakoeni         ###   ########.fr       */
+/*   Created: 2022/12/18 03:00:08 by sbouheni          #+#    #+#             */
+/*   Updated: 2023/09/20 04:23:32 by joakoeni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../libft.h"
 
-int	ft_print_string(char *ap)
+int	ft_print_unsigned_decimal(unsigned int ap)
 {
 	int		count;
-	char	*null_str;
+	char	*unsigned_int_str;
 
-	count = 0;
-	null_str = "(null)";
-	if (ap)
+	unsigned_int_str = ft_unsigned_itoa(ap);
+	if (!(unsigned_int_str) || (ft_print_string(unsigned_int_str) < 0))
 	{
-		while (ap[count])
-		{
-			if (ft_print_char(ap[count]) < 0)
-				return (-2147483648);
-			count++;
-		}
+		free(unsigned_int_str);
+		return (-2147483648);
 	}
-	else
-	{
-		while (null_str[count])
-		{
-			if (ft_print_char(null_str[count]) < 0)
-				return (-2147483648);
-			count++;
-		}
-	}
+	count = ft_strlen(unsigned_int_str);
+	free(unsigned_int_str);
 	return (count);
 }
