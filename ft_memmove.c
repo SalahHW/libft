@@ -6,7 +6,7 @@
 /*   By: sbouheni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:20:25 by sbouheni          #+#    #+#             */
-/*   Updated: 2022/11/11 18:38:14 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/09/22 03:49:19 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	i = 0;
 	if (src || dest)
-	{	
+	{
 		if (src < dest)
 		{
 			while (n--)
