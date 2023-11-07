@@ -6,13 +6,13 @@
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 06:37:13 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/11/07 06:38:17 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/11/07 07:10:43 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-long	ft_atol(char *str)
+long	ft_atol(const char *str)
 {
 	long	number;
 	int		sign;
