@@ -6,13 +6,13 @@
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 06:40:44 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/11/07 06:43:02 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/11/07 07:13:32 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	is_convertible_to_int(char *str)
+int	is_int_compatible(char *str)
 {
 	int		digit_count;
 	char	*str_ptr;
