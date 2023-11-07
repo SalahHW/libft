@@ -6,7 +6,7 @@
 /*   By: sbouheni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:08:51 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/07/19 23:35:40 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/11/07 06:42:12 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,9 @@ int					ft_printf(const char *format, ...);
 int					ft_get_number_length(int number);
 char				*ft_unsigned_itoa(unsigned int ap);
 //				personal
+long				ft_atol(const char *str);
 int					is_white_space(char c);
+int					is_int_compatible(char *str);
 char				**ft_split_white_space(char const *s);
 char				*p_free_strjoin(char *s1, char *s2);
 void				p_free_splited_str(char **splited_str);
