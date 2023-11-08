@@ -30,7 +30,7 @@ int	is_int_compatible(char *str)
 	}
 	if (digit_count == 0)
 		return (0);
-	if (ft_atol(str) < 1 || ft_atol(str) > 2147483647)
+	if (ft_atol(str) < -2147483648 || ft_atol(str) > 2147483647)
 		return (0);
 	return (1);
 }
