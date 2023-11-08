@@ -20,7 +20,7 @@ int	is_int_compatible(char *str)
 	str_ptr = str;
 	digit_count = 0;
 	if (*str_ptr == '-' || *str_ptr == '+')
-		return (0);
+		str_ptr++;
 	while (*str_ptr)
 	{
 		if (digit_count > 10 || !ft_isdigit(*str_ptr))
